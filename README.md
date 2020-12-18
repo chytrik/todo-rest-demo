@@ -28,3 +28,7 @@ Or you can use Docker to build the native executable using: `./mvnw package -Pna
 You can then execute your binary: `./target/todo-rest-demo-1.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image-guide .
+
+## Run Postgres in Docker
+
+You can run Postgres DB using: `docker run -it --rm --name pg-docker -e POSTGRES_USER=pg -e POSTGRES_PASSWORD=pg -e POSTGRES_DB=todo -p 5432:5432 postgres`.
